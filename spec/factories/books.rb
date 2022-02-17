@@ -17,7 +17,7 @@ FactoryBot.define do
     isbn_13 { '9780134077703' }
     description { 'The Rails Tutorial is great!' }
     released_on { '2013-05-09' }
-    publisher_id { nil }
+    publisher
     association :author, factory: :michael_hartl
   end
 
