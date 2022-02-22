@@ -7,7 +7,6 @@ class FieldPicker
 
   def pick
     (validate_fields || pickable).each do |field|
-      binding.irb
       value = (@presenter.respond_to?(field) ? @presenter :
                                                @presenter.object).send(field)
       @presenter.data[field] = value
